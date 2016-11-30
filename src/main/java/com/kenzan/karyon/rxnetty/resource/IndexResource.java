@@ -59,7 +59,7 @@ public class IndexResource implements RequestHandler<ByteBuf, ByteBuf>{
                         } catch (Exception e){
                             e.printStackTrace();
                         }
-                        response.writeString("<html><head><style>body{text-align:center;font-family:'Lucida Grande'}</style></head><body><img src='http://kenzan.com/wp-content/themes/kenzan/images/logo-reg.png' /><h2>Example Spinnaker Application</h2><h3>Instance Id " + instanceId + "</h3></body></html>");
+                        response.writeString("<html><head><style>body{text-align:center;font-family:'Lucida Grande'}</style></head><body><img src='http://kenzan.com/wp-content/themes/kenzan/images/logo-reg.png' /><h2>Example Spinnaker Application</h2><h3><p><cite>Using Kubernetes and running Kubernetes are two different things. Most people just want to deploy apps; not become a cluster administrator.</cite><p>  -Kelsey Hightower</p></h3><h4>Instance Id " + instanceId + "</h4></body></html>");
                         return response.close();
                     }
                 });
